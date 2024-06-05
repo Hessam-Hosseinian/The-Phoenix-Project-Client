@@ -1,0 +1,27 @@
+#whiteAnchorPane {
+    -fx-background-color: #1e1e1e; /* Darker background for night mode */
+}
+
+#blueAnchorPane {
+    -fx-background-color: #00203f; /* Darker blue background */
+}
+
+.button {
+    -fx-background-color: #005bb5; /* Darker button background */
+}
+
+.button:hover {
+    -fx-background-color: #003f88; /* Darker hover state */
+    -fx-scale-x: 1.03;
+    -fx-scale-y: 1.03;
+}
+
+.text-field {
+    -fx-background-color: transparent;
+    -fx-border-color: #005bb5; /* Darker border color */
+    -fx-border-width: 0px 0px 2px 0px;
+}
+
+.text-field:hover {
+    -fx-translate-x: 7;
+}

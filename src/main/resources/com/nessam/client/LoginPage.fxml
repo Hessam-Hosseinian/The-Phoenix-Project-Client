@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.Label?>
@@ -9,32 +10,16 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nessam.client.Login_Controller">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" stylesheets="@LoginPage.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nessam.client.Login_Controller">
    <left>
-      <AnchorPane prefHeight="200.0" prefWidth="350.0" BorderPane.alignment="CENTER">
+      <AnchorPane id="whiteAnchorPane" prefHeight="200.0" prefWidth="350.0" BorderPane.alignment="CENTER">
          <children>
-            <TextField fx:id="Username_textfield" layoutX="102.0" layoutY="177.0" promptText="User Name" style="-fx-background-color: transparent; -fx-border-color: #0a66c2; -fx-border-width: 0px 0px 2px 0px;" />
-            <PasswordField fx:id="Password_textfield" layoutX="103.0" layoutY="239.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #0a66c2; -fx-border-width: 0px 0px 2px 0px;" />
-            <Button fx:id="signIn_button" layoutX="66.0" layoutY="320.0" mnemonicParsing="false" onAction="#signIn" onMouseEntered="#_button_entered" onMouseExited="#_button_exit" prefHeight="34.0" prefWidth="218.0" style="-fx-background-color: #0598ff;" text="Sign in" textFill="WHITE" />
-            <Hyperlink layoutX="90.0" layoutY="278.0" prefHeight="24.0" prefWidth="94.0" text="Forget password?">
-               <font>
-                  <Font size="10.0" />
-               </font>
-            </Hyperlink>
-            <TextField layoutX="98.0" layoutY="372.0" prefHeight="27.0" prefWidth="137.0" style="-fx-background-color: transparent;" text="New to Linkedin?">
-               <font>
-                  <Font size="10.0" />
-               </font>
-            </TextField>
-            <Hyperlink layoutX="189.0" layoutY="373.0" onAction="#signUp" prefHeight="24.0" prefWidth="51.0" text="Join now">
-               <font>
-                  <Font size="10.0" />
-               </font>
-            </Hyperlink>
-            <Text fill="#40a8bd" layoutX="86.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to your professional community" wrappingWidth="147.5">
+            <Text id="note" fill="#40a8bd" layoutX="86.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to your professional community" wrappingWidth="147.5">
                <font>
                   <Font name="Noto Sans Armenian Regular" size="12.0" />
                </font>
@@ -44,20 +29,52 @@
                   <Image url="@../../../pictures/linkedin(1).png" />
                </image>
             </ImageView>
-            <Label fx:id="user_error_label" layoutX="278.0" layoutY="185.0" prefHeight="18.0" prefWidth="71.0">
-               <font>
-                  <Font size="5.0" />
-               </font></Label>
-            <Label fx:id="pass_error_label" layoutX="280.0" layoutY="251.0" prefHeight="18.0" prefWidth="67.0">
-               <font>
-                  <Font size="5.0" />
-               </font></Label>
-            <Label fx:id="error_label" layoutX="103.0" layoutY="424.0" prefHeight="18.0" prefWidth="144.0" textAlignment="CENTER" textFill="RED" />
+            <Label fx:id="error_label" alignment="CENTER" layoutY="424.0" prefHeight="18.0" prefWidth="349.0" textAlignment="CENTER" textFill="RED" />
+            <VBox layoutX="99.0" layoutY="145.0" prefHeight="165.0" prefWidth="164.0">
+               <children>
+                  <HBox prefHeight="28.0" prefWidth="160.0">
+                     <children>
+                        <TextField fx:id="Username_textfield" prefHeight="29.0" prefWidth="185.0" promptText="Email Address" />
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox prefHeight="27.0" prefWidth="160.0">
+                     <children>
+                        <PasswordField fx:id="Password_textfield" prefHeight="29.0" prefWidth="203.0" promptText="Password" />
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <Hyperlink prefHeight="24.0" prefWidth="168.0" text="Forget password?">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Hyperlink>
+               </children>
+            </VBox>
+            <Button id="SignUp_btn" fx:id="signIn_button" defaultButton="true" layoutX="72.0" layoutY="321.0" mnemonicParsing="false" onAction="#signIn" prefHeight="34.0" prefWidth="218.0" text="Sign in" textFill="WHITE" />
+            <HBox layoutX="107.0" layoutY="377.0" prefHeight="20.0" prefWidth="149.0">
+               <children>
+                  <Label text="New to Linkedin?">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <Hyperlink onAction="#signUp" prefHeight="24.0" prefWidth="51.0" text="Join now">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Hyperlink>
+               </children>
+            </HBox>
          </children>
       </AnchorPane>
    </left>
    <right>
-      <AnchorPane prefHeight="500.0" prefWidth="350.0" style="-fx-background-color: #0071ac;" BorderPane.alignment="CENTER">
+      <AnchorPane id="blueAnchorPane" prefHeight="500.0" prefWidth="350.0" BorderPane.alignment="CENTER">
          <children>
             <Text fill="WHITE" layoutX="37.0" layoutY="451.0" strokeType="OUTSIDE" strokeWidth="0.0" text="By clicking Continue to join or sign in, you agree to LinkedIn’s User Agreement, Privacy Policy, and Cookie Policy. " textAlignment="CENTER" wrappingWidth="276.5">
                <font>
@@ -71,4 +88,5 @@
             </ImageView>
          </children></AnchorPane>
    </right>
+
 </BorderPane>

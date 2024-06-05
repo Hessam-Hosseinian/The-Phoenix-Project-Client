@@ -1,12 +1,11 @@
 package com.nessam.client;
 
 import com.google.gson.Gson;
+import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.TextField;
+import javafx.fxml.Initializable;
+import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.DragEvent;
@@ -24,10 +23,15 @@ import java.net.MalformedURLException;
 import java.net.ProtocolException;
 import java.net.URL;
 import java.nio.file.*;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.ResourceBundle;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class SignUp_Controller {
+
     int sceneNum = 0;
 
     @FXML
@@ -38,22 +42,16 @@ public class SignUp_Controller {
     private PasswordField PasswordCheck_tf;
     @FXML
     private Button SignUp_btn;
-
     @FXML
     private Label Error_lbl;
-
     @FXML
     private TextField FirstName_tf;
-
     @FXML
     private TextField LastName_tf;
-
     @FXML
     private TextField AdditionalName_tf;
-
     @FXML
     private ImageView ProfilePicture_tf;
-
     @FXML
     private ImageView BackgroundPicture_tf;
 
@@ -65,12 +63,14 @@ public class SignUp_Controller {
     private String additionalName;
     private String profilePicture;
     private String backgroundPicture;
+    private String location;
 
 
     public void signIn() throws IOException {
-        HelloApplication application= new HelloApplication();
+        HelloApplication application = new HelloApplication();
         application.changeScene(1);
     }
+
     public void signUp1(ActionEvent event) {
         if (Email_tf.getText().isEmpty() || Password_tf.getText().isEmpty() || PasswordCheck_tf.getText().isEmpty()) {
             Error_lbl.setText("Please fill all the fields");
@@ -188,7 +188,6 @@ public class SignUp_Controller {
             Gson gson = new Gson();
             String json = gson.toJson(user);
 
-
             // Send POST request
             URL url = new URL("http://localhost:8080/users");
             HttpURLConnection con = (HttpURLConnection) url.openConnection();
@@ -276,6 +275,8 @@ public class SignUp_Controller {
 
             if (response.equals("User created successfully")) {
                 Error_lbl.setText("Registration completed successfully!");
+                HelloApplication application = new HelloApplication();
+                application.changeScene(5);
 
             } else {
                 Error_lbl.setText("Server error");
@@ -283,6 +284,56 @@ public class SignUp_Controller {
             }
         }
     }
+
+    public void signUp4(ActionEvent event) throws IOException {
+        String response;
+        String inputLine;
+
+        email = UserData.getInstance().getEmail();
+        password = UserData.getInstance().getPassword();
+        firstName = UserData.getInstance().getFirstName();
+        lastName = UserData.getInstance().getLastName();
+        additionalName = UserData.getInstance().getAditionalName();
+        profilePicture = UserData.getInstance().getProfilePicture();
+        backgroundPicture = UserData.getInstance().getBackgroundPicture();
+//            UserData.getInstance().setLocation(countryBox.getValue() + ", " + cityBox.getValue());
+//            location = UserData.getInstance().getLocation();
+
+        User user = new User(email, password, firstName, lastName, additionalName, profilePicture, backgroundPicture, "", "location", "", "");
+
+        Gson gson = new Gson();
+        String json = gson.toJson(user);
+
+        URL url = new URL("http://localhost:8080/users");
+        HttpURLConnection con = (HttpURLConnection) url.openConnection();
+        con.setRequestMethod("POST");
+        con.setRequestProperty("Content-Type", "application/json; utf-8");
+        con.setRequestProperty("Accept", "application/json");
+        con.setDoOutput(true);
+
+        try (OutputStream os = con.getOutputStream()) {
+            byte[] input = json.getBytes("utf-8");
+            os.write(input, 0, input.length);
+        }
+
+        int code = con.getResponseCode();
+
+        try (BufferedReader br = new BufferedReader(new InputStreamReader(con.getInputStream(), "utf-8"))) {
+            StringBuilder responseText = new StringBuilder();
+            String responseLine;
+            while ((responseLine = br.readLine()) != null) {
+                responseText.append(responseLine.trim());
+            }
+            response = responseText.toString();
+        }
+        if (response.equals("User created successfully")) {
+            Error_lbl.setText("Registration completed successfully!");
+        } else {
+            Error_lbl.setText("Server error");
+            BetterLogger.ERROR("Server error");
+        }
+    }
+
 
     public static boolean isValidEmail(String email) {
         if (email == null) return false;
@@ -299,29 +350,6 @@ public class SignUp_Controller {
         return matcher.matches();
     }
 
-    public void _text_entered(MouseEvent event){
-        TextField textField =(TextField)event.getSource();
-        textField.setTranslateX(5);
-
-    }
-    public void _text_exit(MouseEvent event){
-        TextField textField =(TextField)event.getSource();
-        textField.setTranslateX(0);
-
-    }
-
-    public void _button_entered() {
-        SignUp_btn.setStyle("-fx-background-color: #0a66c2;");
-        SignUp_btn.setScaleX(1.05);
-        SignUp_btn.setScaleY(1.05);
-    }
-
-    public void _button_exit() {
-        SignUp_btn.setStyle("-fx-background-color: #0598ff;");
-        SignUp_btn.setScaleX(1);
-        SignUp_btn.setScaleY(1);
-
-    }
 
     @FXML
     private void imageViewDragDropped(DragEvent event) {
@@ -370,4 +398,6 @@ public class SignUp_Controller {
         event.consume();
 
     }
+
+
 }

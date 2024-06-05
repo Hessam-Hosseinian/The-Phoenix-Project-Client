@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1255.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nessam.client.Feed_Controller">
+    <top>
+        <HBox alignment="CENTER" prefHeight="30.0" prefWidth="1280.0" BorderPane.alignment="CENTER">
+            <children>
+            <ImageView fitHeight="50.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../linkedin.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin></ImageView>
+                <TextField focusTraversable="false" prefHeight="35.0" prefWidth="340.0" promptText="Search " styleClass="colorized_text">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+               <HBox.margin>
+                  <Insets left="10.0" right="250.0" />
+               </HBox.margin>
+               <opaqueInsets>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </opaqueInsets>
+               <effect>
+                  <DropShadow />
+               </effect>
+                </TextField>
+            <HBox prefHeight="30.0" prefWidth="644.0">
+               <children>
+                  <Button alignment="TOP_CENTER" contentDisplay="TOP" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" text="Home">
+                     <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../pictures/home.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <styleClass>
+                        <String fx:value="selected" />
+                        <String fx:value="mouse-moved" />
+                     </styleClass>
+                  </Button>
+                  <Button alignment="TOP_CENTER" contentDisplay="TOP" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="My Network">
+                     <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../pictures/add-friend.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <styleClass>
+                        <String fx:value="primary-color" />
+                        <String fx:value="mouse-moved" />
+                     </styleClass>
+                  </Button>
+                  <Button alignment="TOP_CENTER" contentDisplay="TOP" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="Jobs">
+                     <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../pictures/briefcase.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <styleClass>
+                        <String fx:value="primary-color" />
+                        <String fx:value="mouse-moved" />
+                     </styleClass>
+                  </Button>
+                  <Button alignment="TOP_CENTER" contentDisplay="TOP" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="Messaging">
+                     <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../pictures/comment.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <styleClass>
+                        <String fx:value="primary-color" />
+                        <String fx:value="mouse-moved" />
+                     </styleClass>
+                  </Button>
+                  <Button alignment="TOP_CENTER" contentDisplay="TOP" mnemonicParsing="false" prefHeight="58.0" prefWidth="100.0" text="Notifications">
+                     <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../pictures/notification.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <styleClass>
+                        <String fx:value="primary-color" />
+                        <String fx:value="mouse-moved" />
+                     </styleClass>
+                  </Button>
+                  <MenuButton alignment="TOP_CENTER" contentDisplay="TOP" mnemonicParsing="false" prefHeight="57.0" prefWidth="113.0" text="MenuButton">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Action 1" />
+                        <MenuItem mnemonicParsing="false" text="Action 2" />
+                     </items>
+                     <styleClass>
+                        <String fx:value="primary-color" />
+                        <String fx:value="mouse-moved" />
+                     </styleClass>
+                     <graphic>
+                        <ImageView fitHeight="27.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../pictures/profile-user.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </MenuButton>
+               </children>
+            </HBox>
+            </children>
+            <opaqueInsets>
+                <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+            </opaqueInsets>
+        </HBox>
+    </top>
+    <left>
+        <VBox alignment="TOP_CENTER" prefHeight="661.0" prefWidth="253.0" BorderPane.alignment="CENTER">
+            <children>
+            <StackPane alignment="TOP_CENTER" prefHeight="150.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="74.0" fitWidth="259.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../pictures/background.png" />
+                     </image>
+                  </ImageView>
+                  <Circle fx:id="circle" fill="DODGERBLUE" radius="35.0" stroke="BLACK" strokeType="INSIDE">
+                     <StackPane.margin>
+                        <Insets top="50.0" />
+                     </StackPane.margin>
+                  </Circle>
+                  <Label text="Welcome, Hessam!">
+                     <StackPane.margin>
+                        <Insets top="125.0" />
+                     </StackPane.margin>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </StackPane>
+                <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="39.0" prefWidth="297.0" text="Connetions">
+               <styleClass>
+                  <String fx:value="primary-color" />
+                  <String fx:value="mouse-moved" />
+               </styleClass></Button>
+            </children>
+        </VBox>
+    </left>
+    <right>
+        <VBox prefHeight="626.0" prefWidth="281.0" BorderPane.alignment="CENTER">
+            <children>
+                <VBox prefHeight="200.0" prefWidth="100.0" />
+            </children>
+        </VBox>
+    </right>
+    <opaqueInsets>
+        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+    </opaqueInsets>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <ScrollPane focusTraversable="false" prefHeight="626.0" prefWidth="724.0">
+               <content>
+                  <GridPane fx:id="postGrid" alignment="CENTER" prefHeight="510.0" prefWidth="696.0" styleClass="primary-color" vgap="10.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="497.6666564941406" minHeight="10.0" prefHeight="497.6666564941406" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <padding>
+                        <Insets bottom="10.0" left="150.0" right="10.0" top="10.0" />
+                     </padding>
+                  </GridPane>
+               </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+   </center>
+   <stylesheets>
+      <URL value="@Style.css" />
+      <URL value="@Style.css" />
+   </stylesheets>
+</BorderPane>

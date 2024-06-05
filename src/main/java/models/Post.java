@@ -1,6 +1,8 @@
 package models;
 
 
+import com.google.gson.annotations.SerializedName;
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
@@ -10,19 +12,19 @@ public class Post {
 
 
 
-
+    @SerializedName("title")
     private String title;
 
-
+    @SerializedName("content")
     private String content;
 
-
+    @SerializedName("filePath")
     private String filePath;
 
-
+    @SerializedName("dateCreated")
     private String dateCreated;
 
-
+    @SerializedName("author")
     private String author;
 
 

@@ -9,6 +9,7 @@ public class UserData {
     private String aditionalName;
     private String profilePicture;
     private String backgroundPicture;
+    private String location;
 
     private UserData() {
     }
@@ -79,5 +80,13 @@ public class UserData {
 
     public void setBackgroundPicture(String backgroundPicture) {
         this.backgroundPicture = backgroundPicture;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
     }
 }

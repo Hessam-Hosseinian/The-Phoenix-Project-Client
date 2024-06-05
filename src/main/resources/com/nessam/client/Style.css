@@ -1,0 +1,48 @@
+.white-background {
+    -fx-background-color: #FFF;
+}
+
+.primary-color {
+    -fx-background-color: #F4F5F9;
+}
+
+.shadow {
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 1), 10, 0, 0, 10);
+}
+
+.rect-round {
+    -fx-background-radius: 20;
+}
+
+.transparent {
+    -fx-background-color: transparent;
+}
+
+.selected {
+    -fx-background-color: #F4F5F9;
+    -fx-border-color: #000000;
+    -fx-border-width: 0px 0px 2px 0px;
+}
+
+.mouse-moved:hover {
+    -fx-background-color: #EFEFEF;
+    -fx-scale-x: 1.03;
+    -fx-scale-y: 1.03;
+
+}
+
+.colorized_text {
+    -fx-background-color: #edf3f8;
+    -fx-text-fill: white;
+}
+.rounded-image {
+    -fx-background-color: transparent; /* Make sure the background is transparent */
+    -fx-background-radius: 20; /* Adjust the radius as needed */
+    -fx-padding: 10; /* Optional padding */
+}
+
+.rounded-image > .image-view {
+    -fx-background-radius: 20; /* Match the radius with the container */
+    -fx-background-clip: padding-box; /* Clip to padding box */
+}
+
