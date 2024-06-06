@@ -19,7 +19,7 @@ public class HelloApplication extends Application {
     public void start(Stage primaryStage) throws IOException {
 
         stage = primaryStage;
-        changeScene(1);
+        changeScene(4);
         primaryStage.show();
     }
 
@@ -41,13 +41,13 @@ public class HelloApplication extends Application {
 
     private void applyStylesheet(Scene scene) {
         scene.getStylesheets().clear();
-//        if (isNightMode) {
-//
-//            scene.getStylesheets().add(getClass().getResource("Style.css").toExternalForm());
-//        } else {
-//
-//            scene.getStylesheets().add(getClass().getResource("Style.css").toExternalForm());
-//        }
+        if (isNightMode) {
+
+            scene.getStylesheets().add(getClass().getResource("Style.css").toExternalForm());
+        } else {
+
+            scene.getStylesheets().add(getClass().getResource("DarkStyle.css").toExternalForm());
+        }
     }
 
     public void changeScene(int sceneNum) throws IOException {

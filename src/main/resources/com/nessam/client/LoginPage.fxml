@@ -15,9 +15,9 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" stylesheets="@LoginPage.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nessam.client.Login_Controller">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nessam.client.Login_Controller">
    <left>
-      <AnchorPane id="whiteAnchorPane" prefHeight="200.0" prefWidth="350.0" BorderPane.alignment="CENTER">
+      <AnchorPane id="whiteAnchorPane" prefHeight="200.0" prefWidth="350.0" styleClass="whiteAnchorPane" BorderPane.alignment="CENTER">
          <children>
             <Text id="note" fill="#40a8bd" layoutX="86.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to your professional community" wrappingWidth="147.5">
                <font>
@@ -26,7 +26,7 @@
             </Text>
             <ImageView fitHeight="72.0" fitWidth="132.0" layoutX="14.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../pictures/linkedin(1).png" />
+                  <Image url="@../../../linkedin(1).png" />
                </image>
             </ImageView>
             <Label fx:id="error_label" alignment="CENTER" layoutY="424.0" prefHeight="18.0" prefWidth="349.0" textAlignment="CENTER" textFill="RED" />
@@ -34,7 +34,7 @@
                <children>
                   <HBox prefHeight="28.0" prefWidth="160.0">
                      <children>
-                        <TextField fx:id="Username_textfield" prefHeight="29.0" prefWidth="185.0" promptText="Email Address" />
+                        <TextField fx:id="Username_textfield" prefHeight="29.0" prefWidth="185.0" promptText="Email Address" styleClass="text-fieldOP" />
                      </children>
                      <VBox.margin>
                         <Insets bottom="10.0" top="10.0" />
@@ -42,7 +42,7 @@
                   </HBox>
                   <HBox prefHeight="27.0" prefWidth="160.0">
                      <children>
-                        <PasswordField fx:id="Password_textfield" prefHeight="29.0" prefWidth="203.0" promptText="Password" />
+                        <PasswordField fx:id="Password_textfield" prefHeight="29.0" prefWidth="203.0" promptText="Password" styleClass="text-fieldOP" />
                      </children>
                      <VBox.margin>
                         <Insets bottom="10.0" top="10.0" />
@@ -55,7 +55,7 @@
                   </Hyperlink>
                </children>
             </VBox>
-            <Button id="SignUp_btn" fx:id="signIn_button" defaultButton="true" layoutX="72.0" layoutY="321.0" mnemonicParsing="false" onAction="#signIn" prefHeight="34.0" prefWidth="218.0" text="Sign in" textFill="WHITE" />
+            <Button id="SignUp_btn" fx:id="signIn_button" defaultButton="true" layoutX="72.0" layoutY="321.0" mnemonicParsing="false" onAction="#signIn" prefHeight="34.0" prefWidth="218.0" styleClass="blueButton" text="Sign in" textFill="WHITE" />
             <HBox layoutX="107.0" layoutY="377.0" prefHeight="20.0" prefWidth="149.0">
                <children>
                   <Label text="New to Linkedin?">
@@ -74,7 +74,7 @@
       </AnchorPane>
    </left>
    <right>
-      <AnchorPane id="blueAnchorPane" prefHeight="500.0" prefWidth="350.0" BorderPane.alignment="CENTER">
+      <AnchorPane id="blueAnchorPane" prefHeight="500.0" prefWidth="350.0" styleClass="blueAnchorPane" BorderPane.alignment="CENTER">
          <children>
             <Text fill="WHITE" layoutX="37.0" layoutY="451.0" strokeType="OUTSIDE" strokeWidth="0.0" text="By clicking Continue to join or sign in, you agree to LinkedIn’s User Agreement, Privacy Policy, and Cookie Policy. " textAlignment="CENTER" wrappingWidth="276.5">
                <font>
@@ -83,9 +83,10 @@
             </Text>
             <ImageView fitHeight="78.0" fitWidth="71.0" layoutX="140.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../pictures/linkedin.png" />
+                  <Image url="@../../../linkedin.png" />
                </image>
             </ImageView>
+            <Button fx:id="toggleNightModeButton" layoutX="146.0" layoutY="130.0" mnemonicParsing="false" onAction="#handleToggleNightMode" text="Button" />
          </children></AnchorPane>
    </right>
 
