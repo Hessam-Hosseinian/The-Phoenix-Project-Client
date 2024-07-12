@@ -4,6 +4,10 @@ module com.nessam.thephoenixprojectclient {
     requires java.sql;
     requires com.fasterxml.jackson.databind;
     requires com.google.gson;
+    requires org.json;
+    requires org.apache.httpcomponents.httpcore;
+    requires org.apache.httpcomponents.httpmime;
+    requires org.apache.httpcomponents.httpclient;
 
 
     opens com.nessam.client to javafx.fxml;

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="280.0" prefWidth="450.0" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nessam.client.ProfileMainController">
+    <styleClass>
+        <String fx:value="white-background" />
+        <String fx:value="shadow" />
+        <String fx:value="rect-round" />
+    </styleClass>
+   <children>
+      <StackPane alignment="TOP_CENTER" prefHeight="177.0" prefWidth="531.0">
+         <children>
+            <ImageView fx:id="backgroundPic" fitHeight="144.0" fitWidth="531.0" pickOnBounds="true" preserveRatio="true" styleClass="rect-round">
+               <image>
+                  <Image url="@../../../pictures/background.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <Circle fx:id="circle" fill="DODGERBLUE" radius="76.0" stroke="BLACK" strokeType="INSIDE">
+               <StackPane.margin>
+                  <Insets right="275.0" top="25.0" />
+               </StackPane.margin>
+            </Circle>
+         </children>
+      </StackPane>
+      <HBox prefHeight="100.0">
+         <children>
+            <VBox prefHeight="100.0" prefWidth="474.0">
+               <children>
+                  <Label fx:id="UserName" prefHeight="18.0" prefWidth="302.0" text="Hessam Hosseinain">
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets left="5.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font></Label>
+                  <Label fx:id="title" text="Student at Amirkabir University of Technology - Tehran Polytechnic">
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets left="5.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="13.0" />
+                     </font></Label>
+                  <Label fx:id="Adres" text=" Tehran, Tehran Province, Iran Contact info ">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="2.0" right="3.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="13.0" />
+                     </font></Label>
+               </children>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </VBox>
+         </children>
+         <VBox.margin>
+            <Insets bottom="2.0" top="2.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+</VBox>

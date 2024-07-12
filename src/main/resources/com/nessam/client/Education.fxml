@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="center" prefHeight="290.0" prefWidth="552.0" spacing="10" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nessam.client.EducationCardController">
+   <padding>
+      <Insets bottom="15" left="15" right="15" top="15" />
+   </padding>
+
+   <GridPane hgap="10" vgap="10">
+      <Label prefHeight="17.0" prefWidth="257.0" text="School Name:" GridPane.columnIndex="0" />
+      <Label fx:id="schoolNameLabel" prefHeight="17.0" prefWidth="274.0" GridPane.columnIndex="1" />
+
+      <Label prefHeight="17.0" prefWidth="257.0" text="Field of Study:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+      <Label fx:id="fieldOfStudyLabel" prefHeight="17.0" prefWidth="269.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+      <Label prefHeight="17.0" prefWidth="258.0" text="Start Date:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+      <Label fx:id="startDateLabel" prefHeight="17.0" prefWidth="399.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+      <Label prefHeight="17.0" prefWidth="257.0" text="End Date:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+      <Label fx:id="endDateLabel" prefHeight="17.0" prefWidth="363.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+      <Label prefHeight="17.0" prefWidth="257.0" text="Grade:" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+      <Label fx:id="gradeLabel" prefHeight="17.0" prefWidth="325.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+
+      <Label prefHeight="17.0" prefWidth="257.0" text="Activities:" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+      <Label fx:id="activitiesLabel" prefHeight="17.0" prefWidth="347.0" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+
+      <Label prefHeight="17.0" prefWidth="259.0" text="Description:" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+      <Label fx:id="descriptionLabel" prefHeight="17.0" prefWidth="383.0" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+
+      <Label prefHeight="17.0" prefWidth="258.0" text="Skills:" GridPane.columnIndex="0" GridPane.rowIndex="7" />
+      <Label fx:id="skillsLabel" prefHeight="17.0" prefWidth="337.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+
+      <Label prefHeight="17.0" prefWidth="261.0" text="Notify Network:" GridPane.columnIndex="0" GridPane.rowIndex="8" />
+      <Label fx:id="notifyNetworkLabel" prefHeight="17.0" prefWidth="382.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+      <columnConstraints>
+         <ColumnConstraints maxWidth="260.5" minWidth="239.5" prefWidth="257.5" />
+         <ColumnConstraints maxWidth="268.5" minWidth="247.5" prefWidth="250.5" />
+      </columnConstraints>
+      <rowConstraints>
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+      </rowConstraints>
+   </GridPane>
+</VBox>

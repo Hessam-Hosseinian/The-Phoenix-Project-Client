@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4d553ed8-4efc-48b2-a32b-8cd30b56ab52" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nessam/client/AddJob_Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nessam/client/AddPost_Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nessam/client/CommentCardController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nessam/client/CommentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nessam/client/DirectCardController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nessam/client/EmptyDirect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nessam/client/FileDownloadClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nessam/client/FileUploadClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nessam/client/FollowCardController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nessam/client/FollowingCardController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nessam/client/JobPositionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nessam/client/LikedByController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nessam/client/LikedListController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nessam/client/LoadingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nessam/client/LoadingOverlay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nessam/client/SettingsSecurity_Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/models/MessageCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/models/UserEducation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/MyUrl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/nessam/client/AddingJob.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/nessam/client/AddingPost.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/nessam/client/CommentCard.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/nessam/client/CommentCard2.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/nessam/client/Direct.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/nessam/client/EditProfile.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/nessam/client/EmptyDirect.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/nessam/client/Follow.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/nessam/client/FollowCard.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/nessam/client/FollowingCard.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/nessam/client/JobPositionCard.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/nessam/client/JobPositionFixedCard.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/nessam/client/LikeList.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/nessam/client/LikedBy.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/nessam/client/Loading.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/nessam/client/MessageCard.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/nessam/client/Posting.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/nessam/client/ProfileFeed.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/nessam/client/ProfileFeed2.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/nessam/client/ProfileMain.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/nessam/client/SignUp5.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/dxf91zhqd2z6b0bwg85ktm5s4.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/heart(1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/heart(2).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/pictures/Screenshot from 2024-06-03 12-28-05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/pictures/Screenshot from 2024-06-04 20-14-39.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/pictures/heart(1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/pictures/heart(2).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/pictures/icons8-back-48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/pictures/mard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/pictures/mard_chape.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nessam/client/Education_Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nessam/client/Education_Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nessam/client/Feed_Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nessam/client/Feed_Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nessam/client/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nessam/client/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nessam/client/Login_Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nessam/client/Login_Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nessam/client/Post_Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nessam/client/Post_Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nessam/client/ProfileFeed_Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nessam/client/ProfileFeed_Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nessam/client/ProfileMainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nessam/client/ProfileMainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nessam/client/SettingsAccount_Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nessam/client/SettingsAccount_Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nessam/client/Settings_Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nessam/client/Settings_Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nessam/client/SignUp4_Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nessam/client/SignUp4_Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nessam/client/SignUp_Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nessam/client/SignUp_Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nessam/client/UserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nessam/client/UserData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Comment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/CurrentJobPosition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/CurrentJobPosition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Education.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Follow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Follow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Like.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Like.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Post.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/BetterLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/BetterLogger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/nessam/client/DarkStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/nessam/client/DarkStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/nessam/client/LoginPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/nessam/client/LoginPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/nessam/client/Post.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/nessam/client/Post.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/nessam/client/Setting.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/nessam/client/Setting.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/nessam/client/SignUp1.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/nessam/client/SignUp1.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/nessam/client/SignUp2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/nessam/client/SignUp2.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/nessam/client/SignUp3.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/nessam/client/SignUp3.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/nessam/client/SignUp4.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/nessam/client/SignUp4.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/nessam/client/SignUpNight.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/nessam/client/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/nessam/client/Style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/nessam/client/feed.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/nessam/client/feed.fxml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/src/main/java/com/nessam/client" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2igWaRyPuhXfHnTIKNUkEEmsjw2" />
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="openDirectoriesWithSingleClick" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/hessam/Desktop/New Folder 2&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.nessam.client" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nessam.client.HelloApplication" />
+      <module name="The-Phoenix-Project-Client" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nessam.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.HelloApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4d553ed8-4efc-48b2-a32b-8cd30b56ab52" name="Changes" comment="" />
+      <created>1719912763219</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1719912763219</updated>
+      <workItem from="1719912764288" duration="494000" />
+      <workItem from="1719913489467" duration="7114000" />
+      <workItem from="1719921355071" duration="6362000" />
+      <workItem from="1719927857552" duration="1540000" />
+      <workItem from="1719929580475" duration="95000" />
+      <workItem from="1719932377468" duration="942000" />
+      <workItem from="1719952611139" duration="10257000" />
+      <workItem from="1719969636554" duration="1189000" />
+      <workItem from="1719970837914" duration="192000" />
+      <workItem from="1719973934895" duration="1267000" />
+      <workItem from="1719990288450" duration="4688000" />
+      <workItem from="1719997723385" duration="1215000" />
+      <workItem from="1719999112633" duration="7583000" />
+      <workItem from="1720017300447" duration="3167000" />
+      <workItem from="1720075481085" duration="5079000" />
+      <workItem from="1720081996200" duration="221000" />
+      <workItem from="1720082420164" duration="1323000" />
+      <workItem from="1720084196708" duration="22889000" />
+      <workItem from="1720117886704" duration="807000" />
+      <workItem from="1720120322024" duration="2657000" />
+      <workItem from="1720146874824" duration="5927000" />
+      <workItem from="1720153418133" duration="2584000" />
+      <workItem from="1720161003606" duration="11218000" />
+      <workItem from="1720185626926" duration="1868000" />
+      <workItem from="1720191771704" duration="2381000" />
+      <workItem from="1720194186847" duration="848000" />
+      <workItem from="1720195147205" duration="4506000" />
+      <workItem from="1720202901436" duration="10446000" />
+      <workItem from="1720216882173" duration="10000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

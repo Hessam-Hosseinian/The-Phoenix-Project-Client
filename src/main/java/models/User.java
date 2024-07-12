@@ -2,6 +2,8 @@ package models;
 
 import com.google.gson.annotations.SerializedName;
 
+import java.util.List;
+
 public class User {
 
     @SerializedName("email")
@@ -37,8 +39,11 @@ public class User {
     @SerializedName("seekingOpportunity")
     private String seekingOpportunity;
 
-    @SerializedName("information")
-    private Information information;
+    @SerializedName("education")
+    private List<UserEducation> education;
+
+    @SerializedName("job")
+    private CurrentJobPosition job;
 
     // Constructors, getters, and setters
     public User() {
@@ -56,10 +61,9 @@ public class User {
         this.location = location;
         this.profession = profession;
         this.seekingOpportunity = seekingOpportunity;
-        this.information = new Information();
+
     }
 
-    // Getters and setters
     public String getEmail() {
         return email;
     }
@@ -148,29 +152,32 @@ public class User {
         this.seekingOpportunity = seekingOpportunity;
     }
 
-//    public Information getInformation() {
-//        return information;
-//    }
-//
-//    public void setInformation(Information information) {
-//        this.information = information;
-//    }
-//
-//    @Override
-//    public String toString() {
-//        return "User{" +
-//                "email='" + email + '\'' +
-//                ", password='" + password + '\'' +
-//                ", firstName='" + firstName + '\'' +
-//                ", lastName='" + lastName + '\'' +
-//                ", additionalName='" + additionalName + '\'' +
-//                ", profilePicture='" + profilePicture + '\'' +
-//                ", backgroundPicture='" + backgroundPicture + '\'' +
-//                ", title='" + title + '\'' +
-//                ", location='" + location + '\'' +
-//                ", profession='" + profession + '\'' +
-//                ", seekingOpportunity='" + seekingOpportunity + '\'' +
-//                ", information=" + information +
-//                '}';
-//    }
+    public List<UserEducation> getEducation() {
+        return education;
+    }
+
+    public CurrentJobPosition getJob () {
+        return job;
+    }
+    public void setEducation(List<UserEducation> education) {
+        this.education = education;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "email='" + email + '\'' +
+                ", password='" + password + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", additionalName='" + additionalName + '\'' +
+                ", profilePicture='" + profilePicture + '\'' +
+                ", backgroundPicture='" + backgroundPicture + '\'' +
+                ", title='" + title + '\'' +
+                ", location='" + location + '\'' +
+                ", profession='" + profession + '\'' +
+                ", seekingOpportunity='" + seekingOpportunity + '\'' +
+                ", education=" + education +
+                '}';
+    }
 }

@@ -21,6 +21,9 @@ public class Post {
     @SerializedName("filePath")
     private String filePath;
 
+    @SerializedName("image")
+    private String image;
+
     @SerializedName("dateCreated")
     private String dateCreated;
 
@@ -47,7 +50,24 @@ public class Post {
     public Post() {
     }
 
+    public Post(String title, String content, String filePath, String image, String dateCreated, String author, List<Comment> comments, List<Like> likes) {
+        this.title = title;
+        this.content = content;
+        this.filePath = filePath;
+        this.image = image;
+        this.dateCreated = dateCreated;
+        this.author = author;
+        this.comments = comments;
+        this.likes = likes;
+    }
 
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
 
     public String getFilePath() {
         return filePath;

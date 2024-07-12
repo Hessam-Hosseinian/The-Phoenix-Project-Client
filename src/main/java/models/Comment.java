@@ -1,22 +1,23 @@
 package models;
 
+import com.google.gson.annotations.SerializedName;
+
 public class Comment {
 
-
-
+    @SerializedName("content")
     private String content;
 
-
+    @SerializedName("filePath")
     private String filePath;
 
-
+    @SerializedName("author")
     private String author;
+
+    @SerializedName("dateCreated")
     private String dateCreated;
 
-
+    @SerializedName("post")
     private Post post;
-
-
 
     public String getContent() {
         return content;
@@ -56,5 +57,16 @@ public class Comment {
 
     public void setPost(Post post) {
         this.post = post;
+    }
+
+    @Override
+    public String toString() {
+        return "Comment{" +
+                "content='" + content + '\'' +
+                ", filePath='" + filePath + '\'' +
+                ", author='" + author + '\'' +
+                ", dateCreated='" + dateCreated + '\'' +
+                ", post=" + post +
+                '}';
     }
 }

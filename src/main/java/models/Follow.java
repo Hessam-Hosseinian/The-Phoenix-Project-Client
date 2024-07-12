@@ -1,13 +1,15 @@
 package models;
 
 
+import com.google.gson.annotations.SerializedName;
+
 public class Follow {
 
 
-
+    @SerializedName("follower")
     private String follower;
 
-
+    @SerializedName("followed")
     private String followed;
 
     public Follow(String follower, String followed) {
@@ -18,7 +20,6 @@ public class Follow {
     public Follow() {
 
     }
-
 
 
     public String getFollower() {
@@ -37,6 +38,11 @@ public class Follow {
         this.followed = followed;
     }
 
-
-
+    @Override
+    public String toString() {
+        return "Follow{" +
+                "follower='" + follower + '\'' +
+                ", followed='" + followed + '\'' +
+                '}';
+    }
 }

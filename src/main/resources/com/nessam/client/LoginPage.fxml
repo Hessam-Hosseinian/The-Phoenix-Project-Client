@@ -15,7 +15,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nessam.client.Login_Controller">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nessam.client.Login_Controller">
    <left>
       <AnchorPane id="whiteAnchorPane" prefHeight="200.0" prefWidth="350.0" styleClass="whiteAnchorPane" BorderPane.alignment="CENTER">
          <children>
@@ -86,7 +86,11 @@
                   <Image url="@../../../linkedin.png" />
                </image>
             </ImageView>
-            <Button fx:id="toggleNightModeButton" layoutX="146.0" layoutY="130.0" mnemonicParsing="false" onAction="#handleToggleNightMode" text="Button" />
+            <ImageView fitHeight="248.0" fitWidth="306.0" layoutX="22.0" layoutY="182.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../pictures/mard.png" />
+               </image>
+            </ImageView>
          </children></AnchorPane>
    </right>
 

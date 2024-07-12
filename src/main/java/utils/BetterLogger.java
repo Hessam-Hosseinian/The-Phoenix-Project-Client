@@ -24,12 +24,20 @@ public class BetterLogger {
         DEBUG, INFO, WARNING, ERROR, CRITICAL
     }
 
+    private static boolean isLoggingEnabled = true;
 
     public BetterLogger() {
+    }
 
+    public static void setLoggingEnabled(boolean enabled) {
+        isLoggingEnabled = enabled;
     }
 
     private static void log(LogLevel level, String message) {
+        if (!isLoggingEnabled) {
+            return;
+        }
+
         String color = switch (level) {
             case DEBUG -> CYAN;
             case INFO -> GREEN;
@@ -44,9 +52,7 @@ public class BetterLogger {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
         formattedDateTime = LocalDateTime.now().format(formatter);
 
-
         String style = "";
-
 
         String[] classname = Thread.currentThread().getStackTrace()[3].getClassName().split("\\.");
 
@@ -69,7 +75,7 @@ public class BetterLogger {
         log(LogLevel.ERROR, message);
     }
 
-    public void CRITICAL(String message) {
+    public static void CRITICAL(String message) {
         log(LogLevel.CRITICAL, message);
     }
 }

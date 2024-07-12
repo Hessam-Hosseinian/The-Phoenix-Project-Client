@@ -1,0 +1,306 @@
+css
+.white-background {
+    -fx-background-color: #FFF;
+}
+
+.notSoBlue-background {
+    -fx-background-color: #def0f0;
+}
+
+.Cream-background {
+    -fx-background-color: #e9e8e3;
+}
+
+.text-area {
+    -fx-background-color: transparent;
+    -fx-control-inner-background: transparent;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-padding: 0;
+}
+
+.primary-color {
+    -fx-background-color: #F4F5F9;
+}
+
+.whiteAnchorPane {
+    -fx-background-color: #f4f4f4;
+}
+
+.blueAnchorPane {
+    -fx-background-color: #0071ac;
+}
+
+.blueButton {
+    -fx-background-color: #0589ff;
+}
+
+.almostblueButton {
+    -fx-background-color: #154c79;
+}
+
+.almostblueButton2 {
+    -fx-background-color: #76b5c5;
+}
+
+.text-fieldOP {
+
+    -fx-background-color: transparent;
+    -fx-border-color: #0a66c2;
+    -fx-border-width: 0px 0px 2px 0px;
+
+}
+
+.border_Box {
+
+
+    -fx-border-color: #1e1f22;
+    -fx-border-width: 0px 0px 2px 0px;
+
+}
+
+.text-fieldOP:hover {
+
+    -fx-translate-x: 7;
+}
+
+.blueButton:hover {
+    -fx-background-color: #0a66c2;
+    -fx-scale-x: 1.03;
+    -fx-scale-y: 1.03;
+}
+
+.almostblueButton2:hover {
+    -fx-background-color: #154c79;
+    -fx-scale-x: 1.03;
+    -fx-scale-y: 1.03;
+}
+
+.shadow {
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 1), 10, 0, 0, 10);
+}
+
+.rect-round {
+    -fx-background-radius: 25;
+}
+
+.transparent {
+    -fx-background-color: transparent;
+}
+
+.selected {
+    -fx-background-color: #F4F5F9;
+    -fx-border-color: #000000;
+    -fx-border-width: 0px 0px 2px 0px;
+}
+
+.selectedInBlue {
+    -fx-background-color: #F4F5F9;
+    -fx-border-color: #154c79;
+    -fx-border-width: 0px 0px 1px 0px;
+}
+
+.allselectedInBlue {
+    -fx-background-color: white;
+    -fx-border-color: #154c79;
+    -fx-border-width: 1px 1px 1px 1px;
+}
+
+.selectedInCoffee {
+    -fx-background-color: #F4F5F9;
+    -fx-border-color: #e28743;
+    -fx-border-width: 0px 0px 1px 0px;
+}
+
+.mouse-movedWhite:hover {
+    -fx-background-color: #EFEFEF;
+    -fx-scale-x: 1.03;
+    -fx-scale-y: 1.03;
+
+}
+
+.mouse-movedRed:hover {
+    -fx-background-color: #E4080A;
+    -fx-scale-x: 1.03;
+    -fx-scale-y: 1.03;
+
+}
+
+.rounded-button {
+    border: 2px solid red;
+    border-radius: 50px;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.rounded-button:hover {
+    background-color: red;
+    color: white;
+}
+
+.mouse-movedBlue:hover {
+    -fx-background-color: #0a66c2;
+    -fx-scale-x: 1.03;
+    -fx-scale-y: 1.03;
+
+}
+
+.mouse-movedTrans :hover {
+    -fx-background-color: transparent;
+    -fx-scale-x: 1.03;
+    -fx-scale-y: 1.03;
+
+}
+
+.colorized_text {
+    -fx-background-color: #edf3f8;
+    -fx-text-fill: white;
+}
+
+.colorizedblack_text {
+    -fx-background-color: #edf3f8;
+    -fx-text-fill: black;
+}
+
+.colorizedtrans_text {
+    -fx-background-color: transparent;
+    -fx-text-fill: black;
+}
+
+.rounded-image {
+    -fx-background-color: transparent;
+    -fx-background-radius: 20;
+    -fx-padding: 10;
+}
+
+.rounded-image > .image-view {
+    -fx-background-radius: 20;
+    -fx-background-clip: padding-box;
+}
+
+.choice-box {
+    -fx-background-color: #F4F5F9;
+    -fx-border-color: #0a66c2;
+    -fx-border-width: 0px 0px 2px 0px;
+    -fx-background-radius: 20;
+    -fx-padding: 5;
+}
+
+.choice-box:hover {
+    -fx-background-color: #EFEFEF;
+    -fx-scale-x: 1.03;
+    -fx-scale-y: 1.03;
+}
+
+.choice-box:selected {
+    -fx-background-color: #F4F5F9;
+    -fx-border-color: #000000;
+    -fx-border-width: 0px 0px 2px 0px;
+}
+
+.choice-box .list-cell {
+    -fx-background-color: #f4f4f4;
+    -fx-text-fill: #000000;
+}
+
+.choice-box .list-cell:hover {
+    -fx-background-color: #0589ff;
+}
+
+.choice-box .list-cell:selected {
+    -fx-background-color: #0071ac;
+    -fx-text-fill: #000000;
+}
+
+.choice-box .arrow {
+    -fx-background-color: #0589ff;
+}
+
+.choice-box .arrow:hover {
+    -fx-background-color: #0a66c2;
+}
+
+.scroll-pane {
+    -fx-background-color: #F4F5F9;
+}
+
+.scroll-bar:vertical {
+    -fx-background-color: #F4F5F9;
+}
+
+
+.scroll-bar:horizontal {
+    -fx-background-color: #F4F5F9;
+}
+
+.scroll-bar .track {
+    -fx-background-color: #f4f4f4;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #0071ac;
+    -fx-background-radius: 10;
+}
+
+.scroll-bar .thumb:hover {
+    -fx-background-color: #0589ff;
+}
+
+.scroll-bar .thumb:pressed {
+    -fx-background-color: #0a66c2;
+}
+
+.scroll-bar .increment-button,
+.scroll-bar .decrement-button {
+    -fx-background-color: #F4F5F9;
+    -fx-background-radius: 20;
+}
+
+.scroll-bar .increment-button:hover,
+.scroll-bar .decrement-button:hover {
+    -fx-background-color: #EFEFEF;
+}
+
+.scroll-bar .increment-arrow,
+.scroll-bar .decrement-arrow {
+    -fx-background-color: transparent;
+    -fx-shape: "M 0 0 L 4 4 L 8 0 Z";
+}
+
+.scroll-bar .increment-arrow:hover,
+.scroll-bar .decrement-arrow:hover {
+    -fx-background-color: #0589ff;
+}
+
+.grid-pane {
+    -fx-padding: 10; /* Padding around the grid */
+    -fx-hgap: 10; /* Horizontal gap between cells */
+    -fx-vgap: 10; /* Vertical gap between cells */
+    -fx-background-color: #f0f0f0; /* Background color of the grid */
+    -fx-border-color: #cccccc; /* Border color of the grid */
+    -fx-border-width: 2; /* Border width of the grid */
+    -fx-border-style: solid; /* Border style of the grid */
+}
+
+/* Style.css */
+.list-view {
+    -fx-background-color: white;
+    -fx-border-color: #ccc;
+}
+
+
+.grid-pane .cell {
+    -fx-background-color: #ffffff; /* Background color of the cell */
+    -fx-border-color: #cccccc; /* Border color of the cell */
+    -fx-border-width: 1; /* Border width of the cell */
+    -fx-border-style: solid; /* Border style of the cell */
+    -fx-padding: 10; /* Padding inside the cell */
+    -fx-alignment: center; /* Center align content within the cell */
+    -fx-font-size: 14px; /* Font size of the text in the cell */
+}

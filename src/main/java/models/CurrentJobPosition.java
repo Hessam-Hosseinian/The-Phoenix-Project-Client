@@ -1,58 +1,48 @@
 package models;
 
 
-import java.sql.Date;
+import com.google.gson.annotations.SerializedName;
 
 
 public class CurrentJobPosition {
 
-
     private User user;
 
+    @SerializedName("userEmail")
+    private String userEmail;
 
+    @SerializedName("title")
     private String jobTitle;
 
+    @SerializedName("employmentType")
+    private String employmentType;
 
-    private int employmentType;
-
-
+    @SerializedName("companyName")
     private String companyName;
 
-
+    @SerializedName("workLocation")
     private String workLocation;
 
-    private int workplaceType;
+    @SerializedName("workLocationType")
+    private String workplaceType;
 
-
+    @SerializedName("isActive")
     private boolean isActive;
 
+    @SerializedName("startDate")
+    private String startDate;
 
-    private Date startDate;
+    @SerializedName("endDate")
+    private String endDate;
 
-    private Date endDate;
-
+    @SerializedName("description")
     private String description;
 
-
+    @SerializedName("skills")
     private String skills;
 
+    @SerializedName("notifyChanges")
     private boolean notifyChanges;
-
-    public CurrentJobPosition(User user, String jobTitle, int employmentType, String companyName, String workLocation, int workplaceType, boolean isActive, Date startDate, Date endDate, String description, String skills, boolean notifyChanges) {
-
-        this.user = user;
-        this.jobTitle = jobTitle;
-        this.employmentType = employmentType;
-        this.companyName = companyName;
-        this.workLocation = workLocation;
-        this.workplaceType = workplaceType;
-        this.isActive = isActive;
-        this.startDate = startDate;
-        this.endDate = endDate;
-        this.description = description;
-        this.skills = skills;
-        this.notifyChanges = notifyChanges;
-    }
 
     public CurrentJobPosition() {
 
@@ -69,6 +59,14 @@ public class CurrentJobPosition {
         this.user = user;
     }
 
+    public String getUserEmail() {
+        return userEmail;
+    }
+
+    public void setUserEmail(String userEmail) {
+        this.userEmail = userEmail;
+    }
+
     public String getJobTitle() {
         return jobTitle;
     }
@@ -77,11 +75,11 @@ public class CurrentJobPosition {
         this.jobTitle = jobTitle;
     }
 
-    public int getEmploymentType() {
+    public String getEmploymentType() {
         return employmentType;
     }
 
-    public void setEmploymentType(int employmentType) {
+    public void setEmploymentType(String employmentType) {
         this.employmentType = employmentType;
     }
 
@@ -101,11 +99,11 @@ public class CurrentJobPosition {
         this.workLocation = workLocation;
     }
 
-    public int getWorkplaceType() {
+    public String getWorkplaceType() {
         return workplaceType;
     }
 
-    public void setWorkplaceType(int workplaceType) {
+    public void setWorkplaceType(String workplaceType) {
         this.workplaceType = workplaceType;
     }
 
@@ -117,20 +115,20 @@ public class CurrentJobPosition {
         isActive = active;
     }
 
-    public Date getStartDate() {
-        return startDate;
-    }
-
-    public void setStartDate(Date startDate) {
-        this.startDate = startDate;
-    }
-
-    public Date getEndDate() {
+    public String getEndDate() {
         return endDate;
     }
 
-    public void setEndDate(Date endDate) {
+    public void setEndDate(String endDate) {
         this.endDate = endDate;
+    }
+
+    public String getStartDate() {
+        return startDate;
+    }
+
+    public void setStartDate(String startDate) {
+        this.startDate = startDate;
     }
 
     public String getDescription() {
@@ -155,5 +153,24 @@ public class CurrentJobPosition {
 
     public void setNotifyChanges(boolean notifyChanges) {
         this.notifyChanges = notifyChanges;
+    }
+
+    @Override
+    public String toString() {
+        return "CurrentJobPosition{" +
+                "user=" + user +
+                ", userEmail='" + userEmail + '\'' +
+                ", jobTitle='" + jobTitle + '\'' +
+                ", employmentType='" + employmentType + '\'' +
+                ", companyName='" + companyName + '\'' +
+                ", workLocation='" + workLocation + '\'' +
+                ", workplaceType='" + workplaceType + '\'' +
+                ", isActive=" + isActive +
+                ", startDate='" + startDate + '\'' +
+                ", endDate='" + endDate + '\'' +
+                ", description='" + description + '\'' +
+                ", skills='" + skills + '\'' +
+                ", notifyChanges=" + notifyChanges +
+                '}';
     }
 }
